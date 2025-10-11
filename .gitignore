@@ -1,0 +1,5 @@
+# global ignores
+.DS_Store
+
+# python virtual env
+venv/
