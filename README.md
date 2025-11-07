@@ -18,7 +18,7 @@ The number of non-unique `id`s used was actually quite a small fraction of the t
 
 It seems that invalid id refs (i.e. an id-referencing attribute pointing at an id that does not exist) are far more common. This occurred in 41 of the 100 sites, and a total of 249 attributes pointing at invalid `id`s (or 9% of the total attributes).
 
-These are also do not necessarily correspond to a real-world bug -- it is possible, for example, to reference an error message element's `id` in `aria-describedby`, counting on the fact that it will only be read if the error message actually exists in the DOM.
+These also do not necessarily correspond to a real-world bug -- it is possible, for example, to reference an error message element's `id` in `aria-describedby`, counting on the fact that it will only be read if the error message actually exists in the DOM.
 
 ## How to run the scripts
 
