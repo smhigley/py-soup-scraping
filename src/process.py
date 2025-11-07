@@ -3,8 +3,10 @@ import csv
 num_sites_invalid = 0
 num_sites_duplicate = 0
 num_sites_used_duplicates = 0
+total_attributes = 0
 total_duplicates = 0
 total_duplicates_used = 0
+invalid_total = 0
 
 # columns: url,attribute count,id count,invalid idref count,duplicate id count,duplicate ids used
 
@@ -26,7 +28,9 @@ with open('results.txt', 'r') as file:
                 num_sites_used_duplicates += 1
             total_duplicates += duplicate_count
             total_duplicates_used += duplicate_used_count
+            total_attributes += int(line[1])
+            invalid_total += invalid_count
 
 
 print(f"{num_sites_invalid} sites with invalid ids, {num_sites_duplicate} sites with duplicate id, {num_sites_used_duplicates} sites that used duplicate ids")
-print(f"Total duplicate ids across all sites: {total_duplicates}, total duplicate ids used across all sites: {total_duplicates_used}")
+print(f"Total duplicate ids across all sites: {total_duplicates}, total duplicate ids used across all sites: {total_duplicates_used}, of {total_attributes} id referencing attributes across all sites; {invalid_total} invalid idrefs used across all sites")
