@@ -2,10 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 from browser import get_page_content
 from write_results import write_results
-from urls import top100
+from urls import top100, duplicate_id_sheet_urls
 
 # for ad-hoc testing
-test_url = "https://microsoft.com"
+test_url = "https://thelennox.ca/"
 
 # list of attributes that use idrefs for accessibility-related relationships
 attributes = ["for", "aria-activedescendant", "aria-controls", "aria-describedby", "aria-details", "aria-errormessage", "aria-labelledby", "aria-owns", "interestfor", "commandfor"]
@@ -58,7 +58,7 @@ def test_page(url):
             if attribute in element.attrs:
                 attribute_count += 1
                 if not check_id(element[attribute], soup):
-                    print(f'Invalid idref {element[attribute]} in attribute {attribute} on element {element}')
+                    # print(f'Invalid idref {element[attribute]} in attribute {attribute} on element {element}')
                     invalid_count += 1
                 if element[attribute] in duplicate_ids:
                     duplicate_id_used += 1
@@ -78,4 +78,4 @@ def test_all_urls(urls):
     write_results(data_columns, data_rows)
 
 # test_page(test_url)
-test_all_urls(top100)
+test_all_urls(duplicate_id_sheet_urls)

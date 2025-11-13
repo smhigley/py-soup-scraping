@@ -100,3 +100,36 @@ top100 = [
     "https://outlook.com",
     "https://wildberries.ru"
 ]
+
+duplicate_id_sheet_urls = [
+    "https://bossclub.com/standard",
+    "https://www.automika.pt/",
+    "https://invokedrinks.com/",
+    "https://skylab-radio.com/",
+    "https://mosart.pl/calendar/event/2025-09-12/16:45",
+    "https://www.autormcar.pt/",
+    "https://tudoevirtual.com/category/seguranca/",
+    "https://tudoevirtual.com/",
+    "https://viaturas.alonsosebranco.pt/",
+    "https://trytaat.com/pages/sca-store-locator",
+    "https://www.tagusmotors.pt/",
+    "https://desayunosorpresamedellin.com/",
+    "https://berontoseno.com/",
+    "https://www.nnfp.cz/",
+    "https://ev.dteenergy.com/",
+    "https://leonerelays.com/ https://leonerelays.com/sitemap",
+    "https://circlekplovykla.lt/",
+    "https://www.brazzauto.pt/",
+    "https://www.autosoares.com/",
+    "https://www.ffernandesautomoveis.com/",
+    "https://umdatabase.net/db.php",
+    "https://www.rimamundo.pt/",
+    "https://www.fattal-alazman.co.il/deal/leonardo_royal_resort_eilat_69306",
+    "https://vineraleigh.com/floor-plans/",
+    "https://www.mrautomoveis.pt/",
+    "https://www.fortunacar.com/",
+    "https://www.garbbo.pt/",
+    "https://www.jbkhanna.com/index.php?route=checkout/printall",
+    "https://distantworlds3.space/roster",
+    "https://thelennox.ca/"
+]

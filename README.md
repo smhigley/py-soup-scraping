@@ -35,6 +35,8 @@ These also do not necessarily correspond to a real-world bug -- it is possible, 
 11. https://max.com: cannot repro in Japan
 12. https://outlook.com: aria-controls on buttons in exclusively rendered tabs
 
+All of these misuses are centered around the need to have multiple instances in the DOM of the same UI that are conditionally rendered, which might make a good addition to the central problem statement.
+
 ## How to run the scripts
 
 This is a python-based web scraper, and assumes python3 and pip are installed.
